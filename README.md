@@ -1,5 +1,5 @@
 # sjs-react-server-prerender
-Proof of concept of a simple pagination component built with jagpolly's [scalajs-react](https://github.com/japgolly/scalajs-react), performing in nodejs for server side rendering using lihaoyi's [autowire](https://github.com/lihaoyi/autowire)/[upickle](https://github.com/lihaoyi/upickle-pprint) libraries.
+Proof of concept of a simple pagination component built with jagpolly's [scalajs-react](https://github.com/japgolly/scalajs-react), performing in nodejs for server side rendering using lihaoyi's [autowire](https://github.com/lihaoyi/autowire)/[upickle](https://github.com/lihaoyi/upickle-pprint) libraries (remote rendering using expressjs).
 
 # Steps to reproduce
 
