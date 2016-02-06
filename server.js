@@ -1,6 +1,7 @@
-var express      = require('express');
-  React          = require('react');
-  ReactDOMServer = require('react-dom/server');
+var express = require('express');
+
+React          = require('react');
+ReactDOMServer = require('react-dom/server');
 
 var Pagination = require('./target/scala-2.11/sjs-react-server-prerender-fastopt.js');
 
