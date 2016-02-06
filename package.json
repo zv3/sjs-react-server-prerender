@@ -1,0 +1,17 @@
+{
+  "name": "sjs-react-server-prerender",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Proof of concept of a react component built with jagpolly's scalajs-react performing in nodejs",
+  "main": "server.js",
+  "author": "Diego Zacarías V. (twitter.com/diegozaka)",
+  "licenses": [{
+    "type": "Apache-2.0",
+    "url": "http://www.apache.org/licenses/LICENSE-2.0"
+  }],
+  "dependencies": {
+    "express": "^4.12.3",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  }
+}
