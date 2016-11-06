@@ -1,11 +1,11 @@
 # sjs-react-server-prerender
-Proof of concept of a simple pagination component built with jagpolly's [scalajs-react](https://github.com/japgolly/scalajs-react), performing in nodejs for server side rendering using lihaoyi's [upickle](https://github.com/lihaoyi/upickle-pprint) library (remote rendering using expressjs).
+Proof of concept of a simple pagination component built with jagpolly's [scalajs-react](https://github.com/japgolly/scalajs-react), performing in node.js for server side rendering using lihaoyi's [upickle](https://github.com/lihaoyi/upickle-pprint) library (remote rendering using expressjs).
 
-The idea behind this is to create a backend service in nodejs the JVM will talk to, to render react components or an entire page (using the same scalajs app) into plain html that will be served back to the user through the JVM.
+So essentially this is just about pre-rendering components built with Scala.js on the server using a node environment. The main idea to this is to create a backend service running in nodejs to render React components (built with Scala.js) to their initial HTML code using the [`ReactDOMServer.renderToString()`](https://facebook.github.io/react/docs/react-dom-server.html#rendertostring) method. The returned HTML markup could then be sent to a JVM app (i.e. Play Framework) which in turn could send that data back to the user's browser. 
 
 #### Steps to reproduce ####
 
 Run:
-`sbt fastOptJS && npm install && node server.js` 
+`sbt fastOptJS && npm i && node server.js` 
 
-Hit your browser on http://localhost:3000/pagination and check the source HTML code.
+Hit your browser to [http://localhost:3000/pagination](http://localhost:3000/pagination) and check the generated source HTML code.
